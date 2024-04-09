@@ -1,0 +1,15 @@
+*.o
+*.a
+*.d
+*.cmd
+*.log
+*.pyc
+*.swp
+*.swo
+*~
+*.der
+*.crt
+*.pem
+*.key
+build*/
+

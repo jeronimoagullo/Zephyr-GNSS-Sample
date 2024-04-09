@@ -1,0 +1,13 @@
+ / {
+	aliases {
+		gnss = &uart4;
+	};
+};
+ 
+ &uart4 {
+	status = "okay";
+	current-speed = <9600>;
+	gnss: gnss-nmea-generic {
+			compatible = "gnss-nmea-generic";
+	};
+};
