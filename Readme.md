@@ -1,5 +1,5 @@
 # Zephyr GNSS sample
-Welcome to the GNSS sample project to show how to configure and use any NMEA0183 device with [Zephyr RTOS](https://www.zephyrproject.org/) trhough the GNSS API in different boards.
+Welcome to the GNSS sample project to show how to configure and use any [NMEA0183](https://en.wikipedia.org/wiki/NMEA_0183) device with [Zephyr RTOS](https://www.zephyrproject.org/) trhough the GNSS API in different boards.
 
 **I encourage you to add the corresponding overlays to support your boards!**
 
@@ -75,7 +75,10 @@ MODEM_CHAT_MATCHES_DEFINE(unsol_matches,
 );
 ```
 
-This repository uses the **generic NMEA driver**. Thus, it can be used with any GNNS module that prints NMEA sentences into UART.
+This repository uses the **generic NMEA driver**. Thus, it can be used with any GNNS module that prints NMEA sentences into UART. In order to use the generic NMEA driver you just need to add the proper device tree overlay to configure the UART of the board to read the NMEA sentences. This project show some examples for different boards.
+
+Expected output:
+![image](images/output_sample.png)
 
 ## Tested boards
 The already tested boards are: esp32s3-mini-1 and b_l4s5i_iot01a.
