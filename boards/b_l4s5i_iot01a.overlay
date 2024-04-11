@@ -1,6 +1,6 @@
  / {
 	aliases {
-		gnss = &uart4;
+		gnss = &gnss;
 	};
 };
  
